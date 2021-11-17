@@ -1,4 +1,4 @@
-[Kanban](./image/Kanban.png)
+![Kanban](./image/Kanban.png)
 
 
 # Kanban Board
