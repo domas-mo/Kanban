@@ -11,4 +11,4 @@ const useStorage = () => {
     return [getItem, setItem];
   };
   
-  export default useStorage;
+export default useStorage;

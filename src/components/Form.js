@@ -1,26 +1,40 @@
 import React, { useReducer } from 'react';
 
+const headerStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  fontFamily: '"Roboto", sans-serif',
+  width: '100%',
+  backgroundColor: '#DDE4E5',
+  borderRadius: '10px'
+};
+
 const divStyle = {
-  backgroundColor: '#4F5D61',
-  width: '100%'
+  backgroundColor: '#DDE4E5',
+  width: '100%',
+  marginBottom: '10px',
+  borderRadius: '10px'
 };
 
 const formStyle = {
   margin: 'auto',
   padding: '1rem',
-  backgroundColor: '#4F5D61',
-  color: '#fff',
+  backgroundColor: '#DDE4E5',
   display: 'flex',
   justifyContent: 'space-around',
   alignItems: 'center',
   flexDirection: 'row',
   width: '50%',
+  fontFamily: '"Roboto", sans-serif',
 };
 
 const inputTextStyle = {
   display: 'block',
   margin: '0 auto',
   padding: '0.5rem',
+  borderRadius: '10px',
+  border: 'none'
 };
 
 const inputSubmitStyle = {
@@ -29,7 +43,10 @@ const inputSubmitStyle = {
   borderRadius: '10px',
   width: '100px',
   cursor: 'pointer',
-  border: 'none'
+  border: 'none',
+  fontFamily: '"Roboto", sans-serif',
+  backgroundColor: '#06A6FF',
+  color: '#ffff'
 };
 
 const Form = (props) => {
@@ -54,6 +71,9 @@ const Form = (props) => {
   
   return (
     <div style={divStyle}>
+      <header style={headerStyle}>
+          <h1>Tablica Kanban</h1>
+        </header>
       <form style={formStyle} onSubmit={(e) => props.handleSubmitForm(e, state, resetInputs())}>
         <label htmlFor="task">
           Nazwa zadania:
@@ -88,7 +108,7 @@ const Form = (props) => {
             required
           />
         </label>
-        <input type="submit" value="Wyślij" style={inputSubmitStyle} />
+        <input type="submit" value="Dodaj" style={inputSubmitStyle} />
       </form>
     </div>
   );

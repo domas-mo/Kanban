@@ -6,13 +6,6 @@ const divStyle = {
   width: '100%',
 };
 
-const headerStyle = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  color: '#3B3F4A'
-};
-
 const sectionStyle = {
   display: 'flex',
   justifyContent: 'center',
@@ -36,9 +29,6 @@ const Board = () => {
   return (
     <>
       <div style={divStyle}>
-        <header style={headerStyle}>
-          <h1>Tablica Kaban</h1>
-        </header>
         <section style={sectionStyle}>{columns}</section>
       </div>
     </>
