@@ -5,6 +5,8 @@
 
 A kanban board is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow), is used in many companies. More about Kaban [here](https://kanbanblog.com/explained/) In this repository I built a simple Kaban board The app uses modern React features including Hooks and Context API.
 
+See the live version of [Kanban](https://domas-mo.github.io/Kanban/)
+
 Project functionality: 
 - create task with description;
 - asign a person to the task;
